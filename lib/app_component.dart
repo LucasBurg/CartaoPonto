@@ -1,12 +1,16 @@
 import 'package:angular/angular.dart';
+import 'package:angular_router/angular_router.dart';
 
 import 'funci/funci_component.dart';
 
 @Component(
   selector: 'my-app',
-  template: '<h1>Hello {{name}}</h1> <funci></funci>',
-  directives: const [FunciComponent]
+  templateUrl: 'app_component.html',
+  directives: const [ROUTER_DIRECTIVES]
 )
+@RouteConfig(const [
+  const Route(path: '/funci', name: 'Funci', component: FunciComponent)
+])
 class AppComponent {
   var name = 'Angular';
 }
