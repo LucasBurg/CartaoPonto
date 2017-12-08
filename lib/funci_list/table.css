@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+}
+
+table tfoot tr td,
+table thead tr th {
+    text-align: left;
+}
+
+table thead tr th {
+    border-bottom: 1px solid black;
+}
+
+table tfoot tr td {
+    border-top: 1px solid black;
+}
