@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 
@@ -15,6 +17,10 @@ class FunciListComponent implements OnInit {
   FunciService _funciService;
   List<Funci> funciList;
   FunciListComponent(this._funciService);
+
+  void novo() {
+    window.alert('Novo funcionário');
+  }
 
   void ngOnInit() {
     funciList = _funciService.getFunciList();
