@@ -3,7 +3,7 @@ import 'package:angular_router/angular_router.dart';
 
 @Component(
   selector: 'funci',
-  template: 'ola mundo',
+  templateUrl: 'funci_component.html',
 )
 class FunciComponent {
   
